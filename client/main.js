@@ -107,6 +107,8 @@ stopStreamBtn.addEventListener('click', () => {
 
   startStreamBtn.disabled = false
   stopStreamBtn.disabled = true
+
+  stopBtn.click()
 })
 
 function generateThumbnail(keypoints) {
