@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>Vite App</title>
 
     <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-core"></script>
@@ -13,13 +14,18 @@
   </head>
   <body>
     <div id="app">
-      <div>
-        <video id="video" width="600" height="600" controls muted>
-          <source src="./assets/mk.mp4" />
-        </video>
+      <div class="capturing">
+        <video id="video" width="600" height="600" controls muted></video>
+        <canvas id="canvas" class="canvas" width="600" height="600"></canvas>
       </div>
-      <button id="runBtn">Start Pose Detector</button>
-      <button id="stopBtn">Stop Pose Detector</button>
+      <div>
+        <button id="runStreamBtn">Start Stream</button>
+        <button id="stopStreamBtn">Stop Stream</button>
+      </div>
+      <div>
+        <button id="runBtn">Start Pose Detector</button>
+        <button id="stopBtn">Stop Pose Detector</button>
+      </div>
     </div>
     <script type="module" src="/main.js"></script>
   </body>

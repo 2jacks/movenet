@@ -15,3 +15,12 @@
   width: 600px;
   height: 600px;
 }
+
+.capturing {
+  display: flex;
+}
+
+.canvas {
+  width: 600px;
+  height: 600px;
+}
